@@ -3,14 +3,22 @@ package domain;
 public class AmountDislike {
 
     private int dislikes;
+    private boolean canDislikes;
 
-    public int getDislike() {
+    public int getDislikes() {
         return dislikes;
     }
 
-    public void setDislike(int dislike) {
-        this.dislikes = dislike;
+    public void setDislikes(int dislikes) {
+        this.dislikes = dislikes;
 
     }
 
+    public boolean isCanDislikes() {
+        return canDislikes;
+    }
+
+    public void setCanDislikes(boolean canDislikes) {
+        this.canDislikes = canDislikes;
+    }
 }
