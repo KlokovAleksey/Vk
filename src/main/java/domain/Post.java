@@ -2,7 +2,7 @@ package domain;
 
 import java.awt.*;
 
-public class PostManager {
+public class Post {
 
     private boolean addComment;
     private int amountDislike;
