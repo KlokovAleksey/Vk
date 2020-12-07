@@ -4,133 +4,184 @@ import java.awt.*;
 
 public class Post {
 
-    private boolean addComment;
-    private int amountDislike;
-    private int amountLike;
-    private int amountView;
-    private String date;
-    private boolean deleteComment;
-    private boolean editPost;
-    private String fromPost;
-    private Image imageContent;
-    private String message;
-    private boolean myFavorite;
-    private int postId;
-    private boolean repost;
-    private boolean shareFriend;
+    private AddComment addComments;
+    private AmountDislike dislikes;
+    private AmountDislike canDislikes;
+    private AmountLike canLikes;
+    private AmountLike likes;
+    private AmountView views;
+    private Date date;
+    private DeleteComment deleteComments;
+    private EditPost editPost;
+    private FromPost fromPost;
+    private ImageContent images;
+    private Message canMessage;
+    private Message text;
+    private MyFavorite favorite;
+    private PostId postId;
+    private Repost reports;
+    private ShareFriend shareFriends;
+    private IdOwnerPost idOwner;
+    private IdOwnerPost ownerName;
+    private IdOwnerPost ownerAvatar;
 
-
-    public boolean isAddComment() {
-        return addComment;
+    public AddComment getAddComments() {
+        return addComments;
     }
 
-    public void setAddComment(boolean addComment) {
-        this.addComment = addComment;
+    public void setAddComments(AddComment addComments) {
+        this.addComments = addComments;
     }
 
-    public int getAmountDislike() {
-        return amountDislike;
+    public AmountDislike getDislikes() {
+        return dislikes;
     }
 
-    public void setAmountDislike(int amountDislike) {
-        this.amountDislike = amountDislike;
+    public void setDislikes(AmountDislike dislikes) {
+        this.dislikes = dislikes;
     }
 
-    public int getAmountLike() {
-        return amountLike;
+    public AmountDislike getCanDislikes() {
+        return canDislikes;
     }
 
-    public void setAmountLike(int amountLike) {
-        this.amountLike = amountLike;
+    public void setCanDislikes(AmountDislike canDislikes) {
+        this.canDislikes = canDislikes;
     }
 
-    public int getAmountView() {
-        return amountView;
+    public AmountLike getCanLikes() {
+        return canLikes;
     }
 
-    public void setAmountView(int amountView) {
-        this.amountView = amountView;
+    public void setCanLikes(AmountLike canLikes) {
+        this.canLikes = canLikes;
     }
 
-    public String getDate() {
+    public AmountLike getLikes() {
+        return likes;
+    }
+
+    public void setLikes(AmountLike likes) {
+        this.likes = likes;
+    }
+
+    public AmountView getViews() {
+        return views;
+    }
+
+    public void setViews(AmountView views) {
+        this.views = views;
+    }
+
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public boolean isDeleteComment() {
-        return deleteComment;
+    public DeleteComment getDeleteComments() {
+        return deleteComments;
     }
 
-    public void setDeleteComment(boolean deleteComment) {
-        this.deleteComment = deleteComment;
+    public void setDeleteComments(DeleteComment deleteComments) {
+        this.deleteComments = deleteComments;
     }
 
-    public boolean isEditPost() {
+    public EditPost getEditPost() {
         return editPost;
     }
 
-    public void setEditPost(boolean editPost) {
+    public void setEditPost(EditPost editPost) {
         this.editPost = editPost;
     }
 
-    public String getFromPost() {
+    public FromPost getFromPost() {
         return fromPost;
     }
 
-    public void setFromPost(String fromPost) {
+    public void setFromPost(FromPost fromPost) {
         this.fromPost = fromPost;
     }
 
-    public Image getImageContent() {
-        return imageContent;
+    public ImageContent getImages() {
+        return images;
     }
 
-    public void setImageContent(Image imageContent) {
-        this.imageContent = imageContent;
+    public void setImages(ImageContent images) {
+        this.images = images;
     }
 
-    public String getMessage() {
-        return message;
+    public Message getCanMessage() {
+        return canMessage;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setCanMessage(Message canMessage) {
+        this.canMessage = canMessage;
     }
 
-    public boolean isMyFavorite() {
-        return myFavorite;
+    public Message getText() {
+        return text;
     }
 
-    public void setMyFavorite(boolean myFavorite) {
-        this.myFavorite = myFavorite;
+    public void setText(Message text) {
+        this.text = text;
     }
 
-    public int getPostId() {
+    public MyFavorite getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(MyFavorite favorite) {
+        this.favorite = favorite;
+    }
+
+    public PostId getPostId() {
         return postId;
     }
 
-    public void setPostId(int postId) {
+    public void setPostId(PostId postId) {
         this.postId = postId;
     }
 
-    public boolean isRepost() {
-        return repost;
+    public Repost getReports() {
+        return reports;
     }
 
-    public void setRepost(boolean repost) {
-        this.repost = repost;
+    public void setReports(Repost reports) {
+        this.reports = reports;
     }
 
-    public boolean isShareFriend() {
-        return shareFriend;
+    public ShareFriend getShareFriends() {
+        return shareFriends;
     }
 
-    public void setShareFriend(boolean shareFriend) {
-        this.shareFriend = shareFriend;
+    public void setShareFriends(ShareFriend shareFriends) {
+        this.shareFriends = shareFriends;
+    }
+
+    public IdOwnerPost getIdOwner() {
+        return idOwner;
+    }
+
+    public void setIdOwner(IdOwnerPost idOwner) {
+        this.idOwner = idOwner;
+    }
+
+    public IdOwnerPost getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(IdOwnerPost ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public IdOwnerPost getOwnerAvatar() {
+        return ownerAvatar;
+    }
+
+    public void setOwnerAvatar(IdOwnerPost ownerAvatar) {
+        this.ownerAvatar = ownerAvatar;
     }
 }
-
-
